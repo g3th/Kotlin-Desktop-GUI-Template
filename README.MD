@@ -20,6 +20,14 @@ Android SDK:
 
 ``` apt-get install android-sdk ```
 
+Update environment variables:
+
+```mousepad ~/.bashrc```
+
+at the bottom:
+
+``` export ANDROID_SDK_ROOT=/usr/share/android-sdk/ (The path of your android installation)```
+
 Latest Gradle version (https://github.com/gradle/gradle/releases/), manually installed or install with sdkman.
 
 Finally, change 'group = "me.user"' in the file 'build.gradle.kts' to your own name:

@@ -10,16 +10,30 @@ Just code your application with an editor/text editor of your choice (mousepad, 
 
 Using Gradle has lots of requirements, and errors might still pop up due to having installed things incorrectly. It is a careful time-consuming process, requires attention to detail and OS knowledge (settings environment variables etc...), as things will not work 'out of the box.'
 
-Requirements:
+### Requirements:
 
-Java SDK ``` apt-get install default-jdk ```
+Java SDK:
 
-Android SDK ``` apt-get install android-sdk ```
+``` apt-get install default-jdk ```
+
+Android SDK:
+
+``` apt-get install android-sdk ```
 
 Latest Gradle version (https://github.com/gradle/gradle/releases/), manually installed or install with sdkman.
 
 Finally, change 'group = "me.user"' in the file 'build.gradle.kts' to your own name:
 
 ``` sed -i 's/me.user/me.myname/g' build.gradle.kts ```
+
+Update android SDK with the aid of sdk package manager:
+
+``` android update sdk ```
+
+if "Failed to create /<PATH>/build-tools - platforms - add-ons":
+
+``` mkdir build-tools platforms add-ons ```
+
+Missing platform-tools? Install them!
  
 
